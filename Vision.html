@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE-DOS</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <header class="header">
+        <img class="bg" src="images/bg.svg" alt="imagen de fondo naranja">
+        <img class="esp" src="images/especies.png" alt="imagen de especies">
+        <div class="menu container">
+            <a href="#" class="logo">DE-DOS</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt="imagen de menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mmenu.html">Menu</a></li>
+                    <li id="cart-icon-container">
+                        <a href="#carrito">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAlxJREFUWEftlz9IV1EUxz+KBja41CAkRBlYQYuTJVIQhEuIS5FNNZgQtltJRYJuQoNYQ06aDgouQRGiQtQQDppgUEmI5hyIkUW9E/fB5ee7f98THLzLbzjnfM+Hc9499/zK2GOnbI/xsA/k6khphR5qAVvANPAB+OsSKspeCpSVeBS4XlRCl44PkGi0Ay9cYkXYbS1rAC6rJO+Ac0UkdGnYblkNsApUKJEzwEeXYF6769qPA1dUkkHgdt6ErngXUDMwp0R+AAMuwUD7T+AlsJDGuYDET5ylXbt1/gBVwLYk8AG6BQztFg2wBtSGVOgg8B2o9oCaBWaU3wXgvEdMH3A3BEh8nwBdHuKPEp902svvA4+Y48BKKFAd8NlDPBToPXBW1/X5hlL/N8BFB1QoUCfwNBaoDZgsEEiu/GFgMxaoXN0ImeD6+QY0KVsW7xHgLXC0xDgGXCsNCGmZxN5LnpLejKwmKBOMSLQk38+rvECHgA3tfbNVygazrmbPjnUntEICMKLWkaz2pJUSW1ab0ph+oDtLIAaoEZB1xHTSmXLM4nMC+FIUkOgsAac95lKWy47ZE3vL9Di5HbLaxhxZh42xMS1LIa4CpwKJFpPNYcIWkwcokMXPPQ+QjPwbwFfgTrJzvzakvKQeZ3lEh5PNQdYZ44kFEpDnmuon4KQhy3Lyj6Ves91UYJnusUD3gceaomx7BwxAv4BKzdZjmPb/XWKBZKWd1yb2M0srpLUdCug3IH+v5OMutEIiJlCt6lGVb8N2pMXylEzZYPJUyO/KRHjFtiwilV/IPpCrTv8A+B9gJUK5qHYAAAAASUVORK5CYII=" alt="Carrito de compras">
+                            <span class="carrito-cantidad">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-info">
+                <div class="header-txt">
+                    <h1>Misión.</h1>
+                    <p>Nuestra misión en DE-DOS es honrar y compartir la riqueza de la gastronomía salvadoreña con cada cliente. Nos comprometemos a preparar y entregar platos típicos como las pupusas, yuca fritas, curtido, atol de elote y café de maíz, manteniendo los estándares más altos de calidad y frescura. Valoramos la importancia de un servicio personalizado y nos esforzamos por crear conexiones genuinas con nuestros clientes, asegurando que cada pedido no solo sea una comida, sino una experiencia cultural auténtica y memorable.</p>
+                    <h1>Visión</h1>
+                    <p>En DE-DOS, aspiramos a convertirnos en el emblema de la cocina salvadoreña a nivel nacional e internacional, siendo el restaurante de elección para aquellos que buscan una experiencia culinaria que trascienda fronteras. Nuestra visión es ser un puente cultural que conecte a El Salvador con el mundo, a través de sabores que cuentan historias y tradiciones en cada entrega. Queremos que cada hogar se convierta en un rincón de nuestro país, donde la calidez de nuestra gente y la riqueza de nuestra cocina sean protagonistas.</p>
+                    
+                </div>
+
+                <div class="header-img">
+                    <video controls>
+                        <source src="images/pupusab2.mp4" type="video/mp4">
+                        
+                    </video>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+          if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+              var myLandbot = new Landbot.Livechat({
+                configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2534963-SFRKXJJ28GS4FYYJ/index.json',
+              });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

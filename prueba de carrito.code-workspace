@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../prueba de carrito"
+		},
+		{
+			"path": "../../carrito-compras-javascript-main (1)/carrito-compras-javascript-main"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pagina web- laboratorio"
+	}
+}
